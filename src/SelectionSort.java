@@ -20,7 +20,7 @@ public class SelectionSort {
                 if (less(a[j], a[min])) min = j;
             exch(a, i , min);
         }
-        isSorted(a);
+        assert isSorted(a);
     }
     private static boolean less(Comparable v, Comparable w) {
         return v.compareTo(w)<0 ;
